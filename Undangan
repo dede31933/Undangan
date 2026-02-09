@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Tunangan - Dede & Dwi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+            background: #f8f9fa;
+        }
+
+        /* Opening Cover */
+        .cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: transform 0.8s ease-in-out;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 550px;
+            height: 550px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 550"><defs><radialGradient id="roseA1"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%237BA8D1"/></radialGradient><radialGradient id="roseA2"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236690B8"/></radialGradient></defs><g opacity="0.6"><ellipse cx="280" cy="220" rx="55" ry="60" fill="url(%23roseA1)"/><ellipse cx="305" cy="210" rx="45" ry="50" fill="url(%23roseA2)"/><ellipse cx="325" cy="235" rx="48" ry="53" fill="url(%23roseA1)"/><ellipse cx="260" cy="245" rx="42" ry="47" fill="url(%23roseA2)"/><ellipse cx="295" cy="250" rx="38" ry="42" fill="url(%23roseA1)" opacity="0.8"/><ellipse cx="315" cy="225" rx="32" ry="37" fill="url(%23roseA2)" opacity="0.7"/></g><g opacity="0.55"><ellipse cx="380" cy="280" rx="58" ry="63" fill="url(%23roseA2)"/><ellipse cx="405" cy="270" rx="46" ry="51" fill="url(%23roseA1)"/><ellipse cx="390" cy="300" rx="40" ry="45" fill="url(%23roseA2)"/><ellipse cx="360" cy="295" rx="36" ry="40" fill="url(%23roseA1)" opacity="0.8"/></g><g opacity="0.5"><ellipse cx="440" cy="340" rx="50" ry="55" fill="url(%23roseA1)"/><ellipse cx="420" cy="350" rx="42" ry="47" fill="url(%23roseA2)"/><ellipse cx="450" cy="360" rx="36" ry="40" fill="url(%23roseA1)"/></g><g fill="%23BFA574" opacity="0.4"><ellipse cx="290" cy="260" rx="10" ry="45" transform="rotate(28 290 260)"/><ellipse cx="310" cy="255" rx="9" ry="40" transform="rotate(-18 310 255)"/><ellipse cx="270" cy="265" rx="8" ry="38" transform="rotate(42 270 265)"/><ellipse cx="395" cy="310" rx="11" ry="48" transform="rotate(-22 395 310)"/><ellipse cx="375" cy="315" rx="9" ry="42" transform="rotate(32 375 315)"/></g><g fill="%2388B076" opacity="0.35"><ellipse cx="285" cy="255" rx="15" ry="7" transform="rotate(-32 285 255)"/><ellipse cx="305" cy="250" rx="13" ry="6" transform="rotate(22 305 250)"/><ellipse cx="390" cy="305" rx="16" ry="7" transform="rotate(-28 390 305)"/><ellipse cx="410" cy="300" rx="14" ry="6" transform="rotate(38 410 300)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .cover::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 500px;
+            height: 500px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><radialGradient id="roseB1"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%237BA8D1"/></radialGradient><radialGradient id="roseB2"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236690B8"/></radialGradient></defs><g opacity="0.6"><ellipse cx="180" cy="330" rx="52" ry="57" fill="url(%23roseB1)"/><ellipse cx="160" cy="320" rx="40" ry="45" fill="url(%23roseB2)"/><ellipse cx="200" cy="320" rx="45" ry="50" fill="url(%23roseB1)"/><ellipse cx="175" cy="350" rx="38" ry="43" fill="url(%23roseB2)"/><ellipse cx="190" cy="335" rx="32" ry="37" fill="url(%23roseB1)" opacity="0.8"/></g><g opacity="0.55"><ellipse cx="130" cy="280" rx="55" ry="60" fill="url(%23roseB2)"/><ellipse cx="110" cy="290" rx="43" ry="48" fill="url(%23roseB1)"/><ellipse cx="145" cy="270" rx="38" ry="42" fill="url(%23roseB2)"/></g><g opacity="0.5"><ellipse cx="80" cy="340" rx="48" ry="53" fill="url(%23roseB1)"/><ellipse cx="90" cy="360" rx="40" ry="45" fill="url(%23roseB2)"/></g><g fill="%23BFA574" opacity="0.4"><ellipse cx="185" cy="360" rx="10" ry="43" transform="rotate(-28 185 360)"/><ellipse cx="165" cy="355" rx="9" ry="38" transform="rotate(18 165 355)"/><ellipse cx="135" cy="300" rx="11" ry="45" transform="rotate(25 135 300)"/><ellipse cx="115" cy="305" rx="9" ry="40" transform="rotate(-32 115 305)"/></g><g fill="%2388B076" opacity="0.35"><ellipse cx="180" cy="355" rx="14" ry="7" transform="rotate(32 180 355)"/><ellipse cx="170" cy="350" rx="12" ry="6" transform="rotate(-22 170 350)"/><ellipse cx="130" cy="295" rx="15" ry="7" transform="rotate(28 130 295)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .cover.hidden {
+            transform: translateY(-100%);
+        }
+
+        .cover-content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .cover h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .cover p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .open-btn {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        .open-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 50px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .floral-decoration {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .floral-top-right {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 450px;
+            height: 450px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><radialGradient id="rose1"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236B9BD1"/></radialGradient><radialGradient id="rose2"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%2387CEEB"/></radialGradient><radialGradient id="rose3"><stop offset="0%25" stop-color="%2387CEEB"/><stop offset="100%25" stop-color="%235C9FBE"/></radialGradient></defs><g opacity="0.8"><ellipse cx="180" cy="120" rx="45" ry="50" fill="url(%23rose1)"/><ellipse cx="200" cy="110" rx="35" ry="40" fill="url(%23rose2)"/><ellipse cx="220" cy="130" rx="40" ry="45" fill="url(%23rose1)"/><ellipse cx="160" cy="140" rx="38" ry="42" fill="url(%23rose3)"/><ellipse cx="190" cy="145" rx="30" ry="35" fill="url(%23rose2)"/><ellipse cx="210" cy="120" rx="25" ry="30" fill="url(%23rose1)" opacity="0.7"/><ellipse cx="170" cy="125" rx="28" ry="32" fill="url(%23rose3)" opacity="0.6"/></g><g opacity="0.75"><ellipse cx="280" cy="180" rx="50" ry="55" fill="url(%23rose2)"/><ellipse cx="300" cy="170" rx="38" ry="43" fill="url(%23rose1)"/><ellipse cx="310" cy="195" rx="35" ry="40" fill="url(%23rose3)"/><ellipse cx="260" cy="195" rx="32" ry="37" fill="url(%23rose2)" opacity="0.8"/><ellipse cx="290" cy="200" rx="28" ry="32" fill="url(%23rose1)" opacity="0.7"/></g><g opacity="0.7"><ellipse cx="340" cy="240" rx="42" ry="47" fill="url(%23rose3)"/><ellipse cx="320" cy="250" rx="36" ry="40" fill="url(%23rose1)"/><ellipse cx="350" cy="260" rx="30" ry="35" fill="url(%23rose2)"/></g><g fill="%23C9A86A" opacity="0.5"><ellipse cx="195" cy="155" rx="8" ry="35" transform="rotate(25 195 155)"/><ellipse cx="215" cy="150" rx="7" ry="30" transform="rotate(-15 215 150)"/><ellipse cx="170" cy="160" rx="6" ry="28" transform="rotate(40 170 160)"/><ellipse cx="295" cy="210" rx="9" ry="38" transform="rotate(-20 295 210)"/><ellipse cx="275" cy="215" rx="7" ry="32" transform="rotate(30 275 215)"/><ellipse cx="330" cy="270" rx="8" ry="35" transform="rotate(15 330 270)"/><path d="M 195 155 Q 200 170 205 155" fill="none" stroke="%23A88F5F" stroke-width="2"/><path d="M 295 210 Q 300 225 305 210" fill="none" stroke="%23A88F5F" stroke-width="2"/></g><g fill="%2387A96B" opacity="0.4"><ellipse cx="185" cy="150" rx="12" ry="6" transform="rotate(-30 185 150)"/><ellipse cx="205" cy="145" rx="10" ry="5" transform="rotate(20 205 145)"/><ellipse cx="285" cy="205" rx="13" ry="6" transform="rotate(-25 285 205)"/><ellipse cx="305" cy="200" rx="11" ry="5" transform="rotate(35 305 200)"/><ellipse cx="340" cy="265" rx="12" ry="6" transform="rotate(-15 340 265)"/></g></svg>') no-repeat;
+            background-size: contain;
+        }
+
+        .floral-bottom-left {
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 450px;
+            height: 450px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><radialGradient id="rose1b"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236B9BD1"/></radialGradient><radialGradient id="rose2b"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%2387CEEB"/></radialGradient><radialGradient id="rose3b"><stop offset="0%25" stop-color="%2387CEEB"/><stop offset="100%25" stop-color="%235C9FBE"/></radialGradient></defs><g opacity="0.8"><ellipse cx="120" cy="320" rx="42" ry="47" fill="url(%23rose1b)"/><ellipse cx="100" cy="310" rx="32" ry="37" fill="url(%23rose2b)"/><ellipse cx="140" cy="310" rx="38" ry="42" fill="url(%23rose1b)"/><ellipse cx="110" cy="335" rx="35" ry="40" fill="url(%23rose3b)"/><ellipse cx="130" cy="325" rx="28" ry="32" fill="url(%23rose2b)" opacity="0.7"/></g><g opacity="0.75"><ellipse cx="180" cy="270" rx="48" ry="52" fill="url(%23rose2b)"/><ellipse cx="160" cy="260" rx="36" ry="40" fill="url(%23rose1b)"/><ellipse cx="200" cy="265" rx="33" ry="38" fill="url(%23rose3b)"/><ellipse cx="175" cy="285" rx="30" ry="35" fill="url(%23rose2b)" opacity="0.8"/></g><g opacity="0.7"><ellipse cx="240" cy="220" rx="40" ry="45" fill="url(%23rose3b)"/><ellipse cx="220" cy="210" rx="34" ry="38" fill="url(%23rose1b)"/><ellipse cx="250" cy="230" rx="28" ry="32" fill="url(%23rose2b)"/></g><g fill="%23C9A86A" opacity="0.5"><ellipse cx="125" cy="345" rx="8" ry="34" transform="rotate(-25 125 345)"/><ellipse cx="105" cy="340" rx="7" ry="30" transform="rotate(15 105 340)"/><ellipse cx="185" cy="295" rx="9" ry="36" transform="rotate(20 185 295)"/><ellipse cx="165" cy="290" rx="7" ry="31" transform="rotate(-30 165 290)"/><ellipse cx="235" cy="245" rx="8" ry="33" transform="rotate(-15 235 245)"/></g><g fill="%2387A96B" opacity="0.4"><ellipse cx="115" cy="340" rx="12" ry="6" transform="rotate(30 115 340)"/><ellipse cx="135" cy="335" rx="10" ry="5" transform="rotate(-20 135 335)"/><ellipse cx="175" cy="290" rx="13" ry="6" transform="rotate(25 175 290)"/><ellipse cx="195" cy="285" rx="11" ry="5" transform="rotate(-35 195 285)"/></g></svg>') no-repeat;
+            background-size: contain;
+        }
+
+        /* Additional floral decorations for other sections */
+        .section-flower-top {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 200px;
+            height: 200px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><g fill="%239CC5E8"><circle cx="100" cy="80" r="25" opacity="0.6"/><circle cx="120" cy="70" r="20" opacity="0.5"/><circle cx="110" cy="95" r="18" opacity="0.7"/></g><g fill="%23B8D9F0"><circle cx="85" cy="90" r="22" opacity="0.6"/><circle cx="95" cy="75" r="15" opacity="0.5"/></g></svg>') no-repeat;
+            background-size: contain;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .section-flower-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            width: 180px;
+            height: 180px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><g fill="%2387CEEB"><circle cx="90" cy="100" r="25" opacity="0.6"/><circle cx="70" cy="110" r="20" opacity="0.5"/><circle cx="100" cy="115" r="18" opacity="0.7"/></g><g fill="%239CC5E8"><circle cx="110" cy="95" r="22" opacity="0.6"/><circle cx="85" cy="85" r="15" opacity="0.5"/></g></svg>') no-repeat;
+            background-size: contain;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-content h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5em;
+            color: #5c6bc0;
+            margin-bottom: 30px;
+        }
+
+        .bismillah {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .invitation-text {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .couple-names {
+            font-size: 3em;
+            font-family: 'Great Vibes', cursive;
+            color: #5c6bc0;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .ampersand {
+            font-size: 0.8em;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Event Details */
+        .event-details {
+            padding: 60px 30px;
+            background: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-details::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 280px;
+            height: 280px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280"><defs><radialGradient id="ed1"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%2387CEEB"/></radialGradient></defs><g opacity="0.5"><ellipse cx="200" cy="90" rx="38" ry="42" fill="url(%23ed1)"/><ellipse cx="220" cy="80" rx="30" ry="34" fill="%239CC5E8"/><ellipse cx="230" cy="105" rx="32" ry="36" fill="url(%23ed1)"/><ellipse cx="180" cy="105" rx="28" ry="32" fill="%2387CEEB" opacity="0.7"/></g><g fill="%23C9A86A" opacity="0.4"><ellipse cx="210" cy="115" rx="7" ry="30" transform="rotate(25 210 115)"/><ellipse cx="190" cy="120" rx="6" ry="26" transform="rotate(-20 190 120)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .event-details::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 250px;
+            height: 250px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><defs><radialGradient id="ed2"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236B9BD1"/></radialGradient></defs><g opacity="0.5"><ellipse cx="70" cy="180" rx="36" ry="40" fill="url(%23ed2)"/><ellipse cx="90" cy="170" rx="28" ry="32" fill="%2387CEEB"/><ellipse cx="60" cy="165" rx="30" ry="34" fill="url(%23ed2)"/></g><g fill="%23BFA574" opacity="0.4"><ellipse cx="75" cy="195" rx="7" ry="28" transform="rotate(-25 75 195)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .event-details h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #5c6bc0;
+            margin-bottom: 40px;
+        }
+
+        .detail-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .detail-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .detail-box h4 {
+            font-size: 1.5em;
+            color: #5c6bc0;
+            margin-bottom: 15px;
+        }
+
+        .detail-box p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Countdown Timer */
+        .countdown {
+            padding: 60px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .countdown h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 100px;
+            backdrop-filter: blur(10px);
+        }
+
+        .countdown-value {
+            font-size: 3em;
+            font-weight: 600;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 60px 30px;
+            background: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-section::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 220px;
+            height: 220px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220"><defs><radialGradient id="map1"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%238BB8D9"/></radialGradient></defs><g opacity="0.45"><ellipse cx="80" cy="80" rx="32" ry="36" fill="url(%23map1)"/><ellipse cx="100" cy="70" rx="26" ry="30" fill="%239CC5E8"/><ellipse cx="70" cy="100" rx="28" ry="32" fill="url(%23map1)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .map-section::after {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 240px;
+            height: 240px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><defs><radialGradient id="map2"><stop offset="0%25" stop-color="%2387CEEB"/><stop offset="100%25" stop-color="%235C9FBE"/></radialGradient></defs><g opacity="0.45"><ellipse cx="160" cy="160" rx="35" ry="39" fill="url(%23map2)"/><ellipse cx="180" cy="150" rx="28" ry="32" fill="%239CC5E8"/><ellipse cx="150" cy="180" rx="30" ry="34" fill="url(%23map2)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .map-section h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #5c6bc0;
+            margin-bottom: 20px;
+        }
+
+        .address {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .map-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .map-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Gift Section */
+        .gift-section {
+            padding: 60px 30px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gift-section::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 220px;
+            height: 220px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220"><defs><radialGradient id="gift1"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%2387CEEB"/></radialGradient></defs><g opacity="0.5"><ellipse cx="150" cy="70" rx="32" ry="36" fill="url(%23gift1)"/><ellipse cx="170" cy="80" rx="26" ry="30" fill="%239CC5E8"/><ellipse cx="140" cy="90" rx="28" ry="32" fill="url(%23gift1)"/></g><g fill="%23C9A86A" opacity="0.4"><ellipse cx="155" cy="95" rx="6" ry="26" transform="rotate(22 155 95)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .gift-section::after {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><radialGradient id="gift2"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236B9BD1"/></radialGradient></defs><g opacity="0.5"><ellipse cx="60" cy="140" rx="30" ry="34" fill="url(%23gift2)"/><ellipse cx="80" cy="130" rx="24" ry="28" fill="%2387CEEB"/><ellipse cx="50" cy="160" rx="26" ry="30" fill="url(%23gift2)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .gift-section h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #5c6bc0;
+            margin-bottom: 20px;
+        }
+
+        .gift-text {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .bank-card {
+            background: white;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .bank-logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #003d7a;
+            margin-bottom: 20px;
+        }
+
+        .account-number {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .account-name {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .copy-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .copy-success {
+            color: #4caf50;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: none;
+        }
+
+        /* Comments Section */
+        .comments-section {
+            padding: 60px 30px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comments-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 240px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><defs><radialGradient id="comment1"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%2387CEEB"/></radialGradient></defs><g opacity="0.4"><ellipse cx="70" cy="70" rx="33" ry="37" fill="url(%23comment1)"/><ellipse cx="90" cy="60" rx="27" ry="31" fill="%239CC5E8"/><ellipse cx="60" cy="90" rx="29" ry="33" fill="url(%23comment1)"/></g><g fill="%23BFA574" opacity="0.35"><ellipse cx="75" cy="95" rx="6" ry="24" transform="rotate(-22 75 95)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .comments-section h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #5c6bc0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .comment-form {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .comment-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e3f2fd;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'Cormorant Garamond', serif;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        .comment-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .comment-textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 12px 15px;
+            border: 2px solid #e3f2fd;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'Cormorant Garamond', serif;
+            margin-bottom: 15px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+
+        .comment-textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .comment-submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .comment-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .comments-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .comment-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: #5c6bc0;
+            font-size: 1.1em;
+        }
+
+        .comment-attendance {
+            font-size: 0.9em;
+            color: #666;
+            background: #e3f2fd;
+            padding: 4px 12px;
+            border-radius: 15px;
+        }
+
+        .comment-time {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .comment-text {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.05em;
+        }
+
+        .no-comments {
+            text-align: center;
+            color: #999;
+            font-style: italic;
+            padding: 40px 20px;
+        }
+
+        /* RSVP Section */
+        .rsvp {
+            padding: 60px 30px;
+            background: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rsvp::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 230px;
+            height: 230px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 230"><defs><radialGradient id="rsvp1"><stop offset="0%25" stop-color="%239CC5E8"/><stop offset="100%25" stop-color="%236B9BD1"/></radialGradient></defs><g opacity="0.45"><ellipse cx="170" cy="70" rx="34" ry="38" fill="url(%23rsvp1)"/><ellipse cx="190" cy="85" rx="28" ry="32" fill="%2387CEEB"/><ellipse cx="160" cy="95" rx="30" ry="34" fill="url(%23rsvp1)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .rsvp::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 210px;
+            height: 210px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210"><defs><radialGradient id="rsvp2"><stop offset="0%25" stop-color="%23B8D9F0"/><stop offset="100%25" stop-color="%2387CEEB"/></radialGradient></defs><g opacity="0.45"><ellipse cx="60" cy="150" rx="32" ry="36" fill="url(%23rsvp2)"/><ellipse cx="80" cy="140" rx="26" ry="30" fill="%239CC5E8"/><ellipse cx="50" cy="170" rx="28" ry="32" fill="url(%23rsvp2)"/></g></svg>') no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        .rsvp h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #5c6bc0;
+            margin-bottom: 40px;
+        }
+
+        .rsvp-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e3f2fd;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'Cormorant Garamond', serif;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .footer-names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .footer-closing {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Music Player */
+        .music-player {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .music-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .music-btn.playing {
+            animation: pulse 2s infinite;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cover h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-content h2 {
+                font-size: 2.5em;
+            }
+
+            .couple-names {
+                font-size: 2em;
+            }
+
+            .countdown-value {
+                font-size: 2em;
+            }
+
+            .music-player {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .music-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Opening Cover -->
+    <div class="cover" id="cover">
+        <div class="cover-content">
+            <h1>The Engagement</h1>
+            <p>Dede Hidayat & Dwi Sri Nuraini</p>
+            <button class="open-btn" onclick="openInvitation()">Buka Undangan</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="floral-decoration">
+                <div class="floral-top-right"></div>
+                <div class="floral-bottom-left"></div>
+            </div>
+            <div class="hero-content">
+                <h2>The Engagement</h2>
+                <p class="bismillah">Assalamualaikum Wr.Wb</p>
+                <p class="invitation-text">
+                    Tanpa mengurangi rasa hormat<br>
+                    kami mengundang Bapak/Ibu/Saudara/i<br>
+                    untuk datang ke acara lamaran putra-putri kami:
+                </p>
+                <div class="couple-names">
+                    Dede Hidayat
+                    <span class="ampersand">&</span>
+                    Dwi Sri Nuraini
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details -->
+        <section class="event-details">
+            <h3>Detail Acara</h3>
+            
+            <div class="detail-box">
+                <div class="detail-icon">📅</div>
+                <h4>Tanggal & Waktu</h4>
+                <p>
+                    <strong>Senin, 5 Mei 2026</strong><br>
+                    Pukul: 14.00 WIB - Selesai
+                </p>
+            </div>
+
+            <div class="detail-box">
+                <div class="detail-icon">📍</div>
+                <h4>Lokasi Acara</h4>
+                <p>
+                    Jl. Nuri II, Ciomas Rahayu<br>
+                    Kec. Ciomas, Kabupaten Bogor<br>
+                    Jawa Barat 16610
+                </p>
+            </div>
+
+            <div class="detail-box">
+                <div class="detail-icon">💐</div>
+                <h4>Hormat Kami</h4>
+                <p>
+                    Bapak Budi Susilo & Keluarga<br>
+                    <em>Wassalamualaikum Wr.Wb</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section class="countdown">
+            <h3>Menghitung Hari</h3>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Hari</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Jam</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Menit</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Detik</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h3>Lokasi Acara</h3>
+            <p class="address">
+                📍 Jl. Nuri II, Ciomas Rahayu<br>
+                Kec. Ciomas, Kabupaten Bogor<br>
+                Jawa Barat 16610
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Nuri+II+Ciomas+Rahayu+Kec+Ciomas+Kabupaten+Bogor+Jawa+Barat+16610" target="_blank" class="map-btn">
+                🗺️ Buka Google Maps
+            </a>
+        </section>
+
+        <!-- Gift/Amplop Section -->
+        <section class="gift-section">
+            <h3>Amplop Digital</h3>
+            <p class="gift-text">
+                Doa restu Anda merupakan karunia yang sangat berarti bagi kami.<br>
+                Namun jika memberi adalah ungkapan tanda kasih,<br>
+                Anda dapat memberi kado secara cashless.
+            </p>
+            <div class="bank-card">
+                <div class="bank-logo">BCA</div>
+                <div class="account-number" id="accountNumber">5930832423</div>
+                <div class="account-name">Dede Hidayat</div>
+                <button class="copy-btn" onclick="copyAccountNumber()">
+                    📋 Salin Nomor Rekening
+                </button>
+                <div class="copy-success" id="copySuccess">✓ Nomor rekening berhasil disalin!</div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <h3>Ucapan & Doa</h3>
+            
+            <div class="comment-form">
+                <input type="text" id="commentName" class="comment-input" placeholder="Nama Anda" required>
+                <select id="commentAttendance" class="comment-input" required>
+                    <option value="">Konfirmasi Kehadiran</option>
+                    <option value="Hadir">✓ Hadir</option>
+                    <option value="Tidak Hadir">✗ Tidak Hadir</option>
+                    <option value="Masih Ragu">? Masih Ragu</option>
+                </select>
+                <textarea id="commentMessage" class="comment-textarea" placeholder="Tulis ucapan & doa untuk kami..." required></textarea>
+                <button class="comment-submit-btn" onclick="submitComment()">Kirim Ucapan</button>
+            </div>
+
+            <div class="comments-list" id="commentsList">
+                <div class="no-comments">Belum ada ucapan. Jadilah yang pertama! 💙</div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp">
+            <h3>Konfirmasi via WhatsApp</h3>
+            <p style="margin-bottom: 30px; color: #666;">Atau konfirmasi kehadiran langsung via WhatsApp</p>
+            <form class="rsvp-form" onsubmit="submitRSVP(event)">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="attendance">Kehadiran</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">Pilih konfirmasi</option>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak-hadir">Tidak Hadir</option>
+                        <option value="ragu">Masih Ragu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Jumlah Tamu</label>
+                    <input type="number" id="guests" name="guests" min="1" max="5" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ucapan & Doa</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Kirimkan ucapan dan doa untuk kami..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Konfirmasi</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Merupakan suatu kehormatan dan kebahagiaan bagi kami<br>apabila Bapak/Ibu/Saudara/i berkenan hadir</p>
+            <p class="footer-names">Dede & Dwi</p>
+            <p class="footer-closing">Terima kasih atas doa dan restu Anda</p>
+        </footer>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+            🎵
+        </button>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_c8c6e5e0aa.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Open Invitation
+        function openInvitation() {
+            document.getElementById('cover').classList.add('hidden');
+            playMusic();
+        }
+
+        // Music Player
+        let isPlaying = false;
+        const audio = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+                musicBtn.textContent = '🎵';
+                musicBtn.classList.remove('playing');
+            } else {
+                audio.play();
+                musicBtn.textContent = '🎶';
+                musicBtn.classList.add('playing');
+            }
+            isPlaying = !isPlaying;
+        }
+
+        function playMusic() {
+            audio.play();
+            musicBtn.textContent = '🎶';
+            musicBtn.classList.add('playing');
+            isPlaying = true;
+        }
+
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('2026-05-05T14:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<p style="font-size: 2em;">Acara telah berlangsung! 🎉</p>';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Copy Account Number
+        function copyAccountNumber() {
+            const accountNumber = document.getElementById('accountNumber').textContent;
+            navigator.clipboard.writeText(accountNumber).then(() => {
+                const successMsg = document.getElementById('copySuccess');
+                successMsg.style.display = 'block';
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 3000);
+            });
+        }
+
+        // Comments System
+        let comments = [];
+        const STORAGE_KEY = 'engagementComments_DedeDwi2026';
+
+        function loadComments() {
+            const savedComments = localStorage.getItem(STORAGE_KEY);
+            if (savedComments) {
+                try {
+                    comments = JSON.parse(savedComments);
+                    displayComments();
+                } catch (e) {
+                    comments = [];
+                }
+            }
+        }
+
+        function submitComment() {
+            const name = document.getElementById('commentName').value.trim();
+            const attendance = document.getElementById('commentAttendance').value;
+            const message = document.getElementById('commentMessage').value.trim();
+
+            if (!name || !attendance || !message) {
+                alert('Mohon lengkapi semua field');
+                return;
+            }
+
+            const comment = {
+                id: Date.now() + Math.random().toString(36).substr(2, 9),
+                name: name,
+                attendance: attendance,
+                message: message,
+                timestamp: new Date().toISOString(),
+                displayTime: new Date().toLocaleString('id-ID', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                })
+            };
+
+            comments.unshift(comment);
+            
+            // Save to localStorage - once saved, cannot be deleted
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(comments));
+            } catch (e) {
+                alert('Gagal menyimpan ucapan. Mungkin storage penuh.');
+                comments.shift(); // Remove the comment we just added
+                return;
+            }
+            
+            // Clear form
+            document.getElementById('commentName').value = '';
+            document.getElementById('commentAttendance').value = '';
+            document.getElementById('commentMessage').value = '';
+
+            displayComments();
+            
+            // Show success message
+            alert('Terima kasih atas ucapan dan doanya! 💙');
+        }
+
+        function displayComments() {
+            const commentsList = document.getElementById('commentsList');
+            
+            if (comments.length === 0) {
+                commentsList.innerHTML = '<div class="no-comments">Belum ada ucapan. Jadilah yang pertama! 💙</div>';
+                return;
+            }
+
+            let html = '';
+            comments.forEach(comment => {
+                html += `
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <span class="comment-author">${escapeHtml(comment.name)}</span>
+                            <span class="comment-attendance">${comment.attendance}</span>
+                        </div>
+                        <div class="comment-time">${comment.displayTime}</div>
+                        <div class="comment-text">${escapeHtml(comment.message)}</div>
+                    </div>
+                `;
+            });
+            
+            commentsList.innerHTML = html;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Load comments on page load
+        loadComments();
+
+        // RSVP Form Submission
+        function submitRSVP(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const attendance = document.getElementById('attendance').value;
+            const guests = document.getElementById('guests').value;
+            const message = document.getElementById('message').value;
+
+            // Create WhatsApp message
+            const whatsappMessage = `Halo, saya ${name}.\n\nKonfirmasi Kehadiran: ${attendance}\nJumlah Tamu: ${guests}\n\nUcapan & Doa:\n${message}`;
+            const whatsappURL = `https://wa.me/62081524399994?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+
+            // Reset form
+            event.target.reset();
+            alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk mengirim konfirmasi.');
+        }
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeIn 1s ease-in-out';
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
